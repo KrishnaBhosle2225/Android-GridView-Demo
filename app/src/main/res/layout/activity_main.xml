@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#047BD5">
+        <ImageButton
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:background="#047BD5"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_toRightOf="@id/arrow"
+            android:layout_width="38dp"
+            android:layout_height="match_parent"
+            android:id="@+id/flipcart"
+            android:src="@drawable/bg_login"
+            tools:ignore="MissingClass" />
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/kid"
+            android:paddingTop="10dp"
+            android:layout_toRightOf="@id/flipcart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Redmi mobiles"
+            android:textSize="17sp"
+            />
+        <ImageButton
+            android:id="@+id/grocery"
+            android:layout_marginRight="10dp"
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#047BD5"
+            android:src="@drawable/ic_baseline_local_grocery_store_24"
+            />
+        <ImageButton
+            android:layout_width="38dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/grocery"
+            android:background="#047BD5"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#EDEDED">
+
+
+
+        <ImageView
+            android:paddingTop="4dp"
+            android:id="@+id/sort"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="59dp"
+            android:src="@drawable/ic_baseline_sort_24" />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/sort"
+            android:paddingLeft="8dp"
+            android:text="Sort"
+            android:textSize="17sp"
+            />
+
+        <TextView
+            android:paddingTop="5dp"
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:text="Filter"
+            android:textSize="18sp"/>
+
+        <ImageView
+            android:paddingTop="4dp"
+            android:layout_width="38dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_baseline_filter_list_24"
+            android:layout_toLeftOf="@id/filter"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="2"/>
+
+</LinearLayout>
